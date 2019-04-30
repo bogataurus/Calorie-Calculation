@@ -12,7 +12,7 @@ weigth = float(weigth)
 
 if((age > 0) and (age < 3)):
     rmr_baby = ceil((22.1 + (31.05*weigth) ) - (1.16*length))
-    print("rmr baby calorie: ", rmr_baby)
+    print("rmr baby calorie: ", rmr_baby, "kcal")
     protein = ceil((((rmr_baby*0.15) + (rmr_baby*0.20)) / 2))
     print("Protein: ", protein)
     carbohydrate = ceil((((rmr_baby*0.50) + (rmr_baby*0.55)) / 2))
@@ -30,7 +30,7 @@ if((age > 0) and (age < 3)):
 if((age >= 3) and ( age < 10)):
     if(gender == 'male'):
         bmr_child_boy = ceil(((22.7*weigth) + 651))
-        print("bmr child boy calorie: ", bmr_child_boy)
+        print("bmr child boy calorie: ", bmr_child_boy, "kcal")
         protein = ceil((((bmr_child_boy*0.15) + (bmr_child_boy*0.20)) / 2))
         print("Protein: ", protein)
         carbohydrate = ceil((((bmr_child_boy*0.50) + (bmr_child_boy*0.55)) / 2))
@@ -46,7 +46,7 @@ if((age >= 3) and ( age < 10)):
         
     if(gender == 'female'):
         bmr_child_girl = ceil(((22.5*weigth) + 499))
-        print("bmr child girl calorie: ", bmr_child_girl)
+        print("bmr child girl calorie: ", bmr_child_girl, "kcal")
         protein = ceil((((bmr_child_girl*0.15) + (bmr_child_girl*0.20)) / 2))
         print("Protein: ", protein)
         carbohydrate = ceil((((bmr_child_girl*0.50) + (bmr_child_girl*0.55)) / 2))
@@ -63,7 +63,7 @@ if((age >= 3) and ( age < 10)):
 if((age >= 10) and (age < 18)):
     if(gender == 'male'):
         bmr_adolescents_boy = ceil(((17.5*weigth)+ 651))
-        print("bmr adolescents boy calorie: ", bmr_adolescent_boy)
+        print("bmr adolescents boy calorie: ", bmr_adolescent_boy, "kcal")
         protein = ceil((((bmr_adolescents_boy*0.15) + (bmr_adolescents_boy*0.20)) / 2))
         print("Protein: ", protein)
         carbohydrate = ceil((((bmr_adolescents_boy*0.50) + (bmr_adolescents_boy*0.55)) / 2))
@@ -79,7 +79,7 @@ if((age >= 10) and (age < 18)):
         
     if(gender == 'female'):
         bmr_adolescent_girl= ceil(((12.2*weigth)+ 746))
-        print("bmr adolescents girl calorie: ", bmr_adolescent_girl)
+        print("bmr adolescents girl calorie: ", bmr_adolescent_girl, "kcal")
         protein = ceil((((bmr_adolescent_girl*0.15) + (bmr_adolescent_girl*0.20)) / 2))
         print("Protein: ", protein)
         carbohydrate = ceil((((bmr_adolescent_girl*0.50) + (bmr_adolescent_girl*0.55)) / 2))
@@ -96,7 +96,7 @@ if((age >= 10) and (age < 18)):
 if(age >= 18):
     if(gender == 'male'):
         adult_man = ceil(((66.5 + (13.75*weigth)) + ((5.0*length) - (6.77*age))))
-        print("adult man calorie: ", adult_man)
+        print("adult man calorie: ", adult_man, "kcal")
         protein = ceil((((adult_man*0.15) + (adult_man*0.20)) / 2))
         print("Protein: ", protein)
         carbohydrate = ceil((((adult_man*0.50) + (adult_man*0.55)) / 2))
@@ -113,7 +113,7 @@ if(age >= 18):
         
     if(gender == 'female'):
         adult_woman = ceil(((655.1 + (9.56*weigth)) + ((1.85*length) - (4.67*age))))
-        print("adult woman calorie: ", adult_woman)
+        print("adult woman calorie: ", adult_woman, "kcal")
         protein = ceil((((adult_woman*0.15) + (adult_woman*0.20)) / 2))
         print("Protein: ", protein)
         carbohydrate = ceil((((adult_woman*0.50) + (adult_woman*0.55)) / 2))
