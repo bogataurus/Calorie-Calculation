@@ -63,7 +63,7 @@ if((age >= 3) and ( age < 10)):
 if((age >= 10) and (age < 18)):
     if(gender == 'male'):
         bmr_adolescents_boy = ceil(((17.5*weigth)+ 651))
-        print("bmr adolescents boy calorie: ", bmr_adolescent_boy, "kcal")
+        print("bmr adolescents boy calorie: ", bmr_adolescents_boy, "kcal")
         protein = ceil((((bmr_adolescents_boy*0.15) + (bmr_adolescents_boy*0.20)) / 2))
         print("Protein: ", protein)
         carbohydrate = ceil((((bmr_adolescents_boy*0.50) + (bmr_adolescents_boy*0.55)) / 2))
