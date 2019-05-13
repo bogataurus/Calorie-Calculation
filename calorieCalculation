@@ -1,3 +1,4 @@
+__author__ = "taurus"
 import math
 from math import ceil
 
@@ -10,6 +11,14 @@ length = float(length)
 weigth = input("Enter your weight in kilograms: ")
 weigth = float(weigth)
 
+def gram_calculator():
+    amount_of_protein = ceil((protein / 4))
+    print("amount of protein: ", amount_of_protein, "gram")
+    amount_of_carbohydrate = ceil((carbohydrate / 4))
+    print("amount of carbohydrate: ", amount_of_carbohydrate, "gram")
+    amount_of_oil = ceil((oil / 9))
+    print("amount of oil: ", amount_of_oil, "gram")
+
 if((age > 0) and (age < 3)):
     rmr_baby = ceil((22.1 + (31.05*weigth) ) - (1.16*length))
     print("rmr baby calorie: ", rmr_baby, "kcal")
@@ -19,12 +28,8 @@ if((age > 0) and (age < 3)):
     print("carbohydrate: ", carbohydrate)
     oil = ceil((rmr_baby*0.30))
     print("oil: ", oil)
-    amount_of_protein = ceil((protein / 4))
-    print("amount of protein: ", amount_of_protein, "gram")
-    amount_of_carbohydrate = ceil((carbohydrate / 4))
-    print("amount of carbohydrate: ", amount_of_carbohydrate, "gram")
-    amount_of_oil = ceil((oil / 9))
-    print("amount of oil: ", amount_of_oil, "gram")
+    gram_calculator()
+    
     
     
 if((age >= 3) and ( age < 10)):
@@ -37,12 +42,7 @@ if((age >= 3) and ( age < 10)):
         print("carbohydrate: ", carbohydrate)
         oil = ceil((bmr_child_boy*0.30))
         print("oil: ", oil)
-        amount_of_protein = ceil((protein / 4))
-        print("amount of protein: ", amount_of_protein, "gram")
-        amount_of_carbohydrate = ceil((carbohydrate / 4))
-        print("amount of carbohydrate: ", amount_of_carbohydrate, "gram")
-        amount_of_oil = ceil((oil / 9))
-        print("amount of oil: ", amount_of_oil, "gram")
+        gram_calculator()
         
     if(gender == 'female'):
         bmr_child_girl = ceil(((22.5*weigth) + 499))
@@ -53,12 +53,7 @@ if((age >= 3) and ( age < 10)):
         print("carbohydrate: ", carbohydrate)
         oil = ceil((bmr_child_girl*0.30))
         print("oil: ", oil)
-        amount_of_protein = ceil((protein / 4))
-        print("amount of protein: ", amount_of_protein, "gram")
-        amount_of_carbohydrate = ceil((carbohydrate / 4))
-        print("amount of carbohydrate: ", amount_of_carbohydrate, "gram")
-        amount_of_oil = ceil((oil / 9))
-        print("amount of oil: ", amount_of_oil, "gram")
+        gram_calculator()
 
 if((age >= 10) and (age < 18)):
     if(gender == 'male'):
@@ -70,12 +65,7 @@ if((age >= 10) and (age < 18)):
         print("carbohydrate: ", carbohydrate)
         oil = ceil((bmr_adolescents_boy*0.30))
         print("oil: ", oil)
-        amount_of_protein = ceil((protein / 4))
-        print("amount of protein: ", amount_of_protein, "gram")
-        amount_of_carbohydrate = ceil((carbohydrate / 4))
-        print("amount of carbohydrate: ", amount_of_carbohydrate, "gram")
-        amount_of_oil = ceil((oil / 9))
-        print("amount of oil: ", amount_of_oil, "gram")
+        gram_calculator()
         
     if(gender == 'female'):
         bmr_adolescent_girl= ceil(((12.2*weigth)+ 746))
@@ -86,12 +76,7 @@ if((age >= 10) and (age < 18)):
         print("carbohydrate: ", carbohydrate)
         oil = ceil((bmr_adolescent_girl*0.30))
         print("oil: ", oil)
-        amount_of_protein = ceil((protein / 4))
-        print("amount of protein: ", amount_of_protein, "gram")
-        amount_of_carbohydrate = ceil((carbohydrate / 4))
-        print("amount of carbohydrate: ", amount_of_carbohydrate, "gram")
-        amount_of_oil = ceil((oil / 9))
-        print("amount of oil: ", amount_of_oil, "gram")
+        gram_calculator()
     
 if(age >= 18):
     if(gender == 'male'):
@@ -103,12 +88,7 @@ if(age >= 18):
         print("carbohydrate: ", carbohydrate)
         oil = ceil((adult_man*0.30))
         print("oil: ", oil)
-        amount_of_protein = ceil((protein / 4))
-        print("amount of protein: ", amount_of_protein, "gram")
-        amount_of_carbohydrate = ceil((carbohydrate / 4))
-        print("amount of carbohydrate: ", amount_of_carbohydrate, "gram")
-        amount_of_oil = ceil((oil / 9))
-        print("amount of oil: ", amount_of_oil, "gram")
+        gram_calculator()
         
         
     if(gender == 'female'):
@@ -120,9 +100,4 @@ if(age >= 18):
         print("carbohydrate: ", carbohydrate)
         oil = ceil((adult_woman*0.30))
         print("oil: ", oil)
-        amount_of_protein = ceil((protein / 4))
-        print("amount of protein: ", amount_of_protein, "gram")
-        amount_of_carbohydrate = ceil((carbohydrate / 4))
-        print("amount of carbohydrate: ", amount_of_carbohydrate, "gram")
-        amount_of_oil = ceil((oil / 9))
-        print("amount of oil: ", amount_of_oil, "gram")
+        gram_calculator()
