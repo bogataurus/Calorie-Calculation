@@ -28,9 +28,7 @@ if((age > 0) and (age < 3)):
     print("carbohydrate: ", carbohydrate)
     oil = ceil((rmr_baby*0.30))
     print("oil: ", oil)
-    gram_calculator()
-    
-    
+    gram_calculator()   
     
 if((age >= 3) and ( age < 10)):
     if(gender == 'male'):
@@ -88,8 +86,7 @@ if(age >= 18):
         print("carbohydrate: ", carbohydrate)
         oil = ceil((adult_man*0.30))
         print("oil: ", oil)
-        gram_calculator()
-        
+        gram_calculator()        
         
     if(gender == 'female'):
         adult_woman = ceil(((655.1 + (9.56*weigth)) + ((1.85*length) - (4.67*age))))
